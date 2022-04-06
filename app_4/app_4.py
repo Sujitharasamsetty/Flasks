@@ -46,6 +46,6 @@ def user_details(user_name):
         
         return "Normusukoni.Velli Register Chesuko"
     
-app.run()
+app.run(debug=True)
 
 
