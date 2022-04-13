@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+
+    <title> About us page </title>
+    <body>
+        
+        <h1> This is About us page </h1>
+        <h2> Available vegetables: </h2>
+
+        <ol>
+        
+
+        {% for vegetables_dict in input %}
+
+           {%if input[vegetables_dict] >= 50 %}
+            Vere shop lo purchase chesukuntam
+           {%else%}
+            <li> give {{vegetables_dict}} - 1 kg ivvu </li>
+           {% endif %}
+          
+        {% endfor %}
+
+        </ol>
+
+        
+        <script src="" async defer></script>
+    </body>
+</html>
