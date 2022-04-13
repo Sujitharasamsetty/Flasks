@@ -15,20 +15,10 @@
         <h1> This is About us page </h1>
         <h2> Available vegetables: </h2>
 
-        <ol>
         
-
-        {% for vegetables_dict in input %}
-
-           {%if input[vegetables_dict] >= 50 %}
-            Vere shop lo purchase chesukuntam
-           {%else%}
-            <li> give {{vegetables_dict}} - 1 kg ivvu </li>
-           {% endif %}
-          
+        {% for sabji in input %}
+            {{sabji}}-{{input[sabji]}} </br>
         {% endfor %}
-
-        </ol>
 
         
         <script src="" async defer></script>
