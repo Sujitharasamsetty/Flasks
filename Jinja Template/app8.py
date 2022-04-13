@@ -17,7 +17,7 @@ def fun_2():
     
    # vegatables_list = ['Aloo','Mushrooms','Bindi','lemon']
     
-    vegetables_dict = {'Aloo' :50,'Mushrooms':100,'Bindi':60,'lemon':200}
+    vegetables_dict = {'Aloo' :30,'Mushrooms':100,'Bindi':40,'lemon':200}
     return render_template('about_us.html',input = vegetables_dict)
 
 

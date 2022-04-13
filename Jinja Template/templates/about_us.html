@@ -17,7 +17,11 @@
 
         
         {% for sabji in input %}
-            {{sabji}}-{{input[sabji]}} </br>
+           {% if input[sabji] >=50 %}
+               <li> {{sabji}}- chala cost ekkuva </li>
+           {%else%}
+                <li> {{sabji}} - 2 kg ivvu </li>
+           {% endif %}
         {% endfor %}
 
         
