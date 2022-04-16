@@ -10,6 +10,7 @@ def fun_1():
     return render_template("index.html")
 
 
+
 '''@app.route('/thankyou')
 
 def fun_2():
@@ -29,7 +30,7 @@ def fun_2():
     
     if request.method == 'GET' :
         return "Thanks For Registering (GET)"
-    return "Thanks For Registering (POST)"
+    return "Thanks For Registering (POST)" 
         
 
 
