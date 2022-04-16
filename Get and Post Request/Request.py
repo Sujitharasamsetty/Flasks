@@ -7,10 +7,10 @@ app = Flask(__name__)
 
 def fun ():
     
-    if methods == 'GET' :
+    if request.method== 'POST' :
         
-        return "This is a GET REQUEST"
-    return "This is a POST REQUEST"
+        return "This is a POST REQUEST"
+    return "This is a GET REQUEST"
 
 app.run(debug=True)
     
