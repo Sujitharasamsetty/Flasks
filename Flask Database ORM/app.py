@@ -4,19 +4,19 @@ app=Flask(__name__)
 
 @app.route('/')
 
-def fun ():
+def index ():
     
     return render_template ("index.html")
 
 @app.route('/about_us')
 
-def fun_1 ():
+def about ():
     
     return render_template ("about.html")
 
 @app.route('/contact_us')
 
-def fun_2 ():
+def contact ():
     
     return render_template("contact.html")
 
