@@ -52,12 +52,12 @@ def add ():
     
     if request.method == 'POST' :
         
-        request.get.form
+        name=request.form.get('in_1')
+        mrp=request.form.get('in_2')
+        new_sabji = sabji(name.mrp)
+        db.session.add(new_sabji)
+        db.session.commit()
         
-        return
-    
-    
-    
     return render_template("add.html")
 
 @app.route('/search')
@@ -68,6 +68,6 @@ def search():
 @app.route('/display')
 
 def display():
-    return render_template("display.html")
+     return render_template("display.html")
  
 app.run(debug=True)
